@@ -3,7 +3,9 @@ const Discord = require("discord.js");
 
 const client = new Discord.Client();
 
-client.config = config;
+//client.config = config;
+
+prefix = "!";
 
 client.on("ready", () =>{
   console.log("I am ready Master!");
@@ -13,7 +15,7 @@ client.on("ready", () =>{
 client.on("message", (message) => {
     if (message.author.bot) return;
 
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
 
     if (cmd === "help") {
