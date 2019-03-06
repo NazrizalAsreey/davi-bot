@@ -1,0 +1,15 @@
+{
+  "name": "davibot",
+  "version": "1.0.0",
+  "description": "Bot for Destiny Child",
+  "main": "davi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryuna",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "enmap": "^4.8.1"
+  }
+}
